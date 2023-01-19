@@ -32,22 +32,22 @@ public class Student {
         switch(userCaseNum){
             case 1:
                 this.gradeYear = 1;
-                System.out.println("You are a freshmen!");
+                System.out.println("Welcome Freshmen!");
                 setStudentID();
                 break;
             case 2:
                 this.gradeYear = 2;
-                System.out.println("You are a sophomore!");
+                System.out.println("Welcome Sophomore!");
                 setStudentID();
                 break;
             case 3:
                 this.gradeYear = 3;
-                System.out.println("You are a junior!");
+                System.out.println("Welcome Junior!");
                 setStudentID();
                 break;
             case 4:
                 this.gradeYear = 4;
-                System.out.println("You are a senior!");
+                System.out.println("Welcome Senior!");
                 setStudentID();
                 break;
             default:
