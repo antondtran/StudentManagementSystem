@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class Student {
     private String firstName;
     private String lastName;
-    private String gradeYear;
-    private int studentID;
+    private int gradeYear;
+    private String studentID;
     private int tuitionBalance;
-    private int costOfCourse = 800;
+    private static int costOfCourse = 800;
+    private static int id = 1000;
 
     // Constructor
 
@@ -30,24 +31,35 @@ public class Student {
 
         switch(userCaseNum){
             case 1:
-                this.gradeYear = "Freshmen";
-                System.out.println("You are a " + gradeYear + "!");
+                this.gradeYear = 1;
+                System.out.println("You are a freshmen!");
+                setStudentID();
                 break;
             case 2:
-                this.gradeYear = "Sophomore";
-                System.out.println("You are a" + gradeYear + "!");
+                this.gradeYear = 2;
+                System.out.println("You are a sophomore!");
+                setStudentID();
                 break;
             case 3:
-                this.gradeYear = "Junior";
-                System.out.println("You are a" + gradeYear + "!");
+                this.gradeYear = 3;
+                System.out.println("You are a junior!");
+                setStudentID();
                 break;
             case 4:
-                this.gradeYear = "Senior";
-                System.out.println("You are a" + gradeYear + "!");
+                this.gradeYear = 4;
+                System.out.println("You are a senior!");
+                setStudentID();
+                break;
             default:
                 System.out.println("Error.");
         }
 
 
+    }
+
+    private void setStudentID(){
+        id++;
+        this.studentID = gradeYear +  "" + id;
+        System.out.println("Your student ID is " + studentID);
     }
 }
